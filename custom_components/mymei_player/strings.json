@@ -1,0 +1,104 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "添加 MYMEI 播放器",
+        "description": "艾美影库（MYMEI）支持 RS-232 串口与 IP（TCP 33080）两种控制方式。",
+        "data": {
+          "auto_detect": "自动识别串口"
+        }
+      },
+      "host": {
+        "title": "配置 IP（可选）",
+        "description": "已识别到播放器 **{name}**。填写 IP 地址可启用网络控制（TCP 33080，支持事件推送）；留空则仅使用 RS-232 串口。",
+        "data": {
+          "host": "IP 地址"
+        }
+      },
+      "manual": {
+        "title": "手动配置",
+        "description": "串口或 IP 至少填写一项。网络控制走 TCP 33080，不可达时自动降级串口。",
+        "data": {
+          "port": "串口",
+          "host": "IP 地址（可选）"
+        }
+      }
+    },
+    "error": {
+      "no_channels": "串口与 IP 至少填写一项",
+      "cannot_connect_serial": "无法打开串口，请检查连接与权限",
+      "cannot_connect_tcp": "无法连接设备 TCP 33080，请检查 IP 地址和网络"
+    },
+    "abort": {
+      "already_configured": "该设备已配置"
+    }
+  },
+  "entity": {
+    "select": {
+      "remote_command": {
+        "name": "遥控命令",
+        "state": {
+          "power_on": "待机开（开启屏幕）",
+          "power_off": "待机关（关闭屏幕）",
+          "reboot": "重启",
+          "power_toggle": "待机切换",
+          "home": "主页",
+          "back": "返回",
+          "up": "方向上",
+          "down": "方向下",
+          "left": "方向左",
+          "right": "方向右",
+          "ok": "确定",
+          "page_up": "上页",
+          "page_down": "下页",
+          "delete": "删除",
+          "menu": "菜单",
+          "settings": "系统设置",
+          "info": "信息",
+          "refresh_library": "刷新影库",
+          "zoom": "缩放",
+          "movie": "电影",
+          "music": "音乐",
+          "file": "文件",
+          "volume_up": "音量 +",
+          "volume_down": "音量 -",
+          "mute": "静音",
+          "play": "播放",
+          "pause": "暂停",
+          "play_pause": "播放/暂停",
+          "stop": "停止",
+          "fast_forward": "快进",
+          "rewind": "快退",
+          "ff_start": "持续快进",
+          "rew_start": "持续快退",
+          "ff_stop": "停止持续快进快退",
+          "audio": "切换音轨",
+          "subtitle": "切换字幕",
+          "hdr_to_sdr_on": "HDR 转 SDR 开",
+          "hdr_to_sdr_off": "HDR 转 SDR 关",
+          "audio_downmix_on": "音频降级输出开",
+          "audio_downmix_off": "音频降级输出关",
+          "audio_out_hdmi": "音频输出 HDMI",
+          "audio_out_hifi": "音频输出 HIFI",
+          "res_720p": "分辨率 720P",
+          "res_1080p60": "分辨率 1080P 60Hz",
+          "res_1080p24": "分辨率 1080P 24Hz",
+          "res_2160p60": "分辨率 2160P 60Hz",
+          "res_2160p30": "分辨率 2160P 30Hz",
+          "res_2160p24": "分辨率 2160P 24Hz",
+          "factory_reset": "恢复出厂",
+          "num_0": "数字键 0",
+          "num_1": "数字键 1",
+          "num_2": "数字键 2",
+          "num_3": "数字键 3",
+          "num_4": "数字键 4",
+          "num_5": "数字键 5",
+          "num_6": "数字键 6",
+          "num_7": "数字键 7",
+          "num_8": "数字键 8",
+          "num_9": "数字键 9"
+        }
+      }
+    }
+  }
+}

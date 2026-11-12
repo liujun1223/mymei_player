@@ -1,0 +1,104 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add MYMEI Player",
+        "description": "The MYMEI media player can be controlled over RS-232 serial or IP (TCP 33080).",
+        "data": {
+          "auto_detect": "Auto-detect serial port"
+        }
+      },
+      "host": {
+        "title": "Configure IP (optional)",
+        "description": "Player **{name}** was detected. Enter an IP address to enable network control (TCP 33080 with event push); leave empty to use RS-232 only.",
+        "data": {
+          "host": "IP address"
+        }
+      },
+      "manual": {
+        "title": "Manual configuration",
+        "description": "At least one of serial port or IP is required. Network control uses TCP 33080 and falls back to serial when unreachable.",
+        "data": {
+          "port": "Serial port",
+          "host": "IP address (optional)"
+        }
+      }
+    },
+    "error": {
+      "no_channels": "Provide a serial port or an IP address",
+      "cannot_connect_serial": "Cannot open the serial port, check wiring and permissions",
+      "cannot_connect_tcp": "Cannot connect to TCP 33080, check the IP address and network"
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  },
+  "entity": {
+    "select": {
+      "remote_command": {
+        "name": "Remote command",
+        "state": {
+          "power_on": "Standby on (screen on)",
+          "power_off": "Standby off (screen off)",
+          "reboot": "Reboot",
+          "power_toggle": "Toggle standby",
+          "home": "Home",
+          "back": "Back",
+          "up": "Up",
+          "down": "Down",
+          "left": "Left",
+          "right": "Right",
+          "ok": "OK",
+          "page_up": "Page up",
+          "page_down": "Page down",
+          "delete": "Delete",
+          "menu": "Menu",
+          "settings": "Settings",
+          "info": "Info",
+          "refresh_library": "Refresh library",
+          "zoom": "Zoom",
+          "movie": "Movie",
+          "music": "Music",
+          "file": "File",
+          "volume_up": "Volume up",
+          "volume_down": "Volume down",
+          "mute": "Mute",
+          "play": "Play",
+          "pause": "Pause",
+          "play_pause": "Play/Pause",
+          "stop": "Stop",
+          "fast_forward": "Fast forward",
+          "rewind": "Rewind",
+          "ff_start": "Start continuous fast forward",
+          "rew_start": "Start continuous rewind",
+          "ff_stop": "Stop continuous seek",
+          "audio": "Switch audio track",
+          "subtitle": "Switch subtitle",
+          "hdr_to_sdr_on": "HDR to SDR on",
+          "hdr_to_sdr_off": "HDR to SDR off",
+          "audio_downmix_on": "Audio downmix on",
+          "audio_downmix_off": "Audio downmix off",
+          "audio_out_hdmi": "Audio output HDMI",
+          "audio_out_hifi": "Audio output HIFI",
+          "res_720p": "Resolution 720P",
+          "res_1080p60": "Resolution 1080P 60Hz",
+          "res_1080p24": "Resolution 1080P 24Hz",
+          "res_2160p60": "Resolution 2160P 60Hz",
+          "res_2160p30": "Resolution 2160P 30Hz",
+          "res_2160p24": "Resolution 2160P 24Hz",
+          "factory_reset": "Factory reset",
+          "num_0": "Number 0",
+          "num_1": "Number 1",
+          "num_2": "Number 2",
+          "num_3": "Number 3",
+          "num_4": "Number 4",
+          "num_5": "Number 5",
+          "num_6": "Number 6",
+          "num_7": "Number 7",
+          "num_8": "Number 8",
+          "num_9": "Number 9"
+        }
+      }
+    }
+  }
+}

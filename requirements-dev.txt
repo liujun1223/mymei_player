@@ -1,0 +1,7 @@
+# 仅用于开发环境：pyserial 由 Home Assistant 自带，manifest 中不能声明
+pyserial>=3.5
+homeassistant==2026.10.4
+
+# 代码检查
+ruff==0.17.3
+mypy==2.4.1

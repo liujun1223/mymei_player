@@ -1,0 +1,3 @@
+# 仅用于 Linux / WSL / Docker 环境：HA 测试插件依赖 Linux 专有模块 fcntl
+pytest-homeassistant-custom-component==0.13.375
+pyserial>=3.5
